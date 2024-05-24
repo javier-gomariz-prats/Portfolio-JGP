@@ -1,69 +1,57 @@
 ---
+import BadgeCV from '../components/BadgeCV.astro';
+import BadgeGithub from '../components/BadgeGithub.astro';
+import BadgeLinkedin from '../components/BadgeLinkedin.astro';
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1> HOLAAA</h1>
+<Layout title="Portfolio Javier Gomariz Prats 👍">
+
+	<div class=" bodywrapper mx-auto max-w-3xl px-5 mb-5 flex flex-col gap-10">
+	<main class="flex flex-col gap-16">
+		<section id="me" class="flex flex-col sm:flex-row items-center gap-6">
+			<div class="relative w-45 h-45 border-8 border-custom-color shadow-lg rounded-full overflow-hidden">
+				<!-- Hacer un cosas curiosas sobre mi al tocar mi foto de perfil  -->
+		<img src="assets/pfp.jpg" alt="XD" class="w-40 h-40 rounded-full object-cover"/>
+	</div>
+	<div class="flex flex-col items-center sm:items-start gap-3">
+		<div class="flex flex-col items-left gap-3">
+			<h1 class="text-3xl sm:text-4xl text-center sm:text-left font-bold text-slate-600 dark:text-green-600"><b> Javier Gomariz Prats</b></h1>
+			<p class=" text-slate-700 text-sm sm:text-lg dark:text-slate-300 max-w-xl rounded-2xl"><em>Apasionado por el software y el aprendizaje.</em></p>
+			<p class="text-slate-700 text-sm sm:text-lg dark:text-slate-300 max-w-xl rounded-2xl">
+				Hola soy Javier 👋 Recién salido de mis estudios, me lanzo al mundo del desarrollo web con un enfoque en el Front-End. Aunque soy un apasionado de <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48" style="vertical-align: middle; display: inline-block;">
+				  <path fill="#ffd600" d="M6,42V6h36v36H6z"></path>
+				  <path fill="#000001" d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z"></path>
+				</svg> y <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48"  style="vertical-align: middle; display: inline-block;">
+					<rect width="36" height="36" x="6" y="6" fill="#1976d2"></rect><polygon fill="#fff" points="27.49,22 14.227,22 14.227,25.264 18.984,25.264 18.984,40 22.753,40 22.753,25.264 27.49,25.264"></polygon><path fill="#fff" d="M39.194,26.084c0,0-1.787-1.192-3.807-1.192s-2.747,0.96-2.747,1.986 c0,2.648,7.381,2.383,7.381,7.712c0,8.209-11.254,4.568-11.254,4.568V35.22c0,0,2.152,1.622,4.733,1.622s2.483-1.688,2.483-1.92 c0-2.449-7.315-2.449-7.315-7.878c0-7.381,10.658-4.469,10.658-4.469L39.194,26.084z"></path>
+					</svg> , estoy siempre listo para aprender cosas nuevas y seguir formándome.
+			  </p>
+			  
+			  
+		</div>
+		<div class="flex gap-3">
+			<div class="py-2 px-4 rounded-xl flex gap-2 items-center justify-center">
+				<BadgeLinkedin/>
+				<BadgeGithub/>
+				<BadgeCV/>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+	<hr class="border border-dotted border-gray-300 dark:border-gray-600 rounded-md"/>
+	<section id="me" class="flex flex-col sm:flex-row items-center gap-6">
+
+		
+	</section>
 	</main>
+</div>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
+	.bodywrapper{
+		margin-top: 3%;
 	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}
+
 </style>
