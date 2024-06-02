@@ -3,6 +3,17 @@ import BadgeCV from '../components/BadgeCV.astro';
 import BadgeGithub from '../components/BadgeGithub.astro';
 import BadgeLinkedin from '../components/BadgeLinkedin.astro';
 import Layout from '../layouts/Layout.astro';
+import HtmlBadge from '../components/htmlBadge.astro';
+import JSBadge from '../components/JSBadge.astro';
+import TSBadge from '../components/TSBadge.astro';
+import CssBadge from '../components/cssBadge.astro';
+import ExperienceBadge from '../components/ExperienceBadge.astro';
+import StarBadge from '../components/starBadge.astro';
+import AngularBadge from '../components/AngularBadge.astro';
+import FirebaseBadge from '../components/FirebaseBadge.astro';
+import BoostrapBadge from '../components/boostrapBadge.astro';
+import TailwindBadge from '../components/tailwindBadge.astro';
+import AstroBadge from '../components/AstroBadge.astro';
 ---
 
 <Layout title="Portfolio Javier Gomariz Prats 👍">
@@ -10,24 +21,25 @@ import Layout from '../layouts/Layout.astro';
 	<div class=" bodywrapper mx-auto max-w-3xl px-5 mb-5 flex flex-col gap-10">
 	<main class="flex flex-col gap-16">
 		<section id="me" class="flex flex-col sm:flex-row items-center gap-6">
-			<div class="relative w-45 h-45 border-8 border-custom-color shadow-lg rounded-full overflow-hidden">
-				<!-- Hacer un cosas curiosas sobre mi al tocar mi foto de perfil  -->
-		<img src="assets/pfp.jpg" alt="XD" class="w-40 h-40 rounded-full object-cover"/>
-	</div>
+			<div class="group relative w-45 h-45 border-8 border-custom-color shadow-lg rounded-full overflow-hidden">
+				<img src="assets/pfp.jpg" alt="Profile Picture" class="w-40 h-40 rounded-full object-cover"/>
+				<span class="absolute inset-0 flex items-center justify-center opacity-0 bg-gray-800 bg-opacity-75 text-white text-xs rounded-full p-1 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+					<ul class="font-bold list-none m-0 p-0 text-center">
+						<li>Curiosidades:</li>
+						<li>-Me encanta ir al gym💪</li>
+						<li>-Me encanta conducir🚗</li>
+						<li>-Me apasionan los videojuegos🎮</li>
+						<li></li>
+					</ul>
+				</span>
+			</div>
 	<div class="flex flex-col items-center sm:items-start gap-3">
 		<div class="flex flex-col items-left gap-3">
 			<h1 class="text-3xl sm:text-4xl text-center sm:text-left font-bold text-slate-600 dark:text-green-600"><b> Javier Gomariz Prats</b></h1>
 			<p class=" text-slate-700 text-sm sm:text-lg dark:text-slate-300 max-w-xl rounded-2xl"><em>Apasionado por el software y el aprendizaje.</em></p>
 			<p class="text-slate-700 text-sm sm:text-lg dark:text-slate-300 max-w-xl rounded-2xl">
-				Hola soy Javier 👋 Recién salido de mis estudios, me lanzo al mundo del desarrollo web con un enfoque en el Front-End. Aunque soy un apasionado de <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48" style="vertical-align: middle; display: inline-block;">
-				  <path fill="#ffd600" d="M6,42V6h36v36H6z"></path>
-				  <path fill="#000001" d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z"></path>
-				</svg> y <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48"  style="vertical-align: middle; display: inline-block;">
-					<rect width="36" height="36" x="6" y="6" fill="#1976d2"></rect><polygon fill="#fff" points="27.49,22 14.227,22 14.227,25.264 18.984,25.264 18.984,40 22.753,40 22.753,25.264 27.49,25.264"></polygon><path fill="#fff" d="M39.194,26.084c0,0-1.787-1.192-3.807-1.192s-2.747,0.96-2.747,1.986 c0,2.648,7.381,2.383,7.381,7.712c0,8.209-11.254,4.568-11.254,4.568V35.22c0,0,2.152,1.622,4.733,1.622s2.483-1.688,2.483-1.92 c0-2.449-7.315-2.449-7.315-7.878c0-7.381,10.658-4.469,10.658-4.469L39.194,26.084z"></path>
-					</svg> , estoy siempre listo para aprender cosas nuevas y seguir formándome.
-			  </p>
-			  
-			  
+				Hola soy Javier 👋 Recién salido de mis estudios, me lanzo al mundo del desarrollo web con un enfoque en el Front-End. Aunque soy un apasionado de <JSBadge/> y  <TSBadge/> , estoy siempre listo para aprender cosas nuevas y seguir formándome.
+			  </p>	  
 		</div>
 		<div class="flex gap-3">
 			<div class="py-2 px-4 rounded-xl flex gap-2 items-center justify-center">
@@ -36,15 +48,184 @@ import Layout from '../layouts/Layout.astro';
 				<BadgeCV/>
 					</div>
 				</div>
+			</div>		
+	</section>
+	<hr class="border border-dotted border-gray-300 dark:border-gray-600 rounded-md"/>
+	<section id="experiencia" class="flex flex-col sm:flex-row items-center gap-6">
+			<header class="font-bold text-2xl text-indigo-400 dark:text-gray-100 mb-6 flex items-center gap-3">
+				<h2>Experiencia <ExperienceBadge/></h2>
+				</header>
+				<div class="flex flex-col gap-10">
+					<div class="flex flex-col gap-5">
+						<div class="flex flex-col gap-1 ">
+							<h2 class="text-lg font-semibold text-slate-700 dark:text-slate-200">Jr Front-End Developer<!-- --> • <!-- -->SendingBay (Marzo 2024-Actual)<!-- --></h2>
+						</div>
+						<ul class="list-disc flex flex-col gap-2 ml-5 text-slate-700 dark:text-gray-300 text-md">
+							<li>Creación de tiendas ecomerce con Shopify, Woocomerce y Prestashop.</li>
+							<li>Desarrollo de plugins y extensiones con JavaScript <JSBadge/>
+								.</li>
+								<li>Desarrollo de front con HTML <HtmlBadge/>, CSS <CssBadge/>
+								   y JavaScript <JSBadge/>.</li>
+						</ul>
+					</div>
+				</div>		
+	</section>
+	<section id="projects">
+		<header class="text-2xl font-bold text-indigo-500 dark:text-white mb-10">
+			<div class="mb-6 flex items-center gap-3">
+				<h2>Projectos</h2>
+				<StarBadge/>
 			</div>
-		</div>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+				<div class="bg-gray-800 rounded-lg p-4 shadow-lg text-white border dark:border-gray-700 dark:hover:border-gray-300/30 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-105 duration-300">
+					<a href="" class="omg">
+					<h3 class="text-lg font-semibold flex items-center group">
+						PokéCore
+						<svg class="arrow opacity-0 scale-75 ml-2 transition-opacity duration-200 ease-in-out" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M5 12h14m0 0l-7-7m7 7l-7 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</h3>
+				
+					<p class="text-sm">Repositorio web de Pokémon competitivo entregado como TFG</p>
+					<div class="mt-6 flex gap-4">
+						<div class="relative flex items-center">
+							<span class="group relative rounded-full px-1 py-1 text-xs font-medium">
+								<AngularBadge/>
+								<span class="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full mb-2 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover:opacity-100 group-hover:-translate-y-3">
+									Angular
+								</span>
+							</span>
+						</div>
+						<div class="relative flex items-center">
+							<span class="group relative rounded-full px-1 py-1 text-xs font-medium">
+								<FirebaseBadge/>
+								<span class="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full mb-2 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover:opacity-100 group-hover:-translate-y-3">
+									FireBase
+								</span>
+							</span>
+						</div>
+						<div class="relative flex items-center">
+							<span class="group relative rounded-full px-1 py-1 text-xs font-medium">
+								<HtmlBadge/>
+								<span class="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full mb-2 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover:opacity-100 group-hover:-translate-y-3">
+									HTML
+								</span>
+							</span>
+						</div>
+						<div class="relative flex items-center">
+							<span class="group relative rounded-full px-1 py-1 text-xs font-medium">
+								<CssBadge/>
+								<span class="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full mb-2 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover:opacity-100 group-hover:-translate-y-3">
+									CSS
+								</span>
+							</span>
+						</div>
+						<div class="relative flex items-center">
+							<span class="group relative rounded-full px-1 py-1 text-xs font-medium">
+								<TSBadge/>
+								<span class="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full mb-2 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover:opacity-100 group-hover:-translate-y-3">
+									TypeScript
+								</span>
+							</span>
+						</div>
+						<div class="relative flex items-center">
+							<span class="group relative rounded-full px-1 py-1 text-xs font-medium">
+								<BoostrapBadge/>
+								<span class="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full mb-2 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover:opacity-100 group-hover:-translate-y-3">
+									Boostrap
+								</span>
+							</span>
+						</div>
+				
+						
+					</div>
+				</a>
+				</div>
+				<div class="bg-gray-800 rounded-lg p-4 shadow-lg text-white border dark:border-gray-700 dark:hover:border-gray-300/30 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-105 duration-300">
+					<a href="" class="omg">
+						<h3 class="text-lg font-semibold flex items-center group">
+							Portfolio Javier Gomariz
+							<svg class="arrow opacity-0 scale-75 ml-2 transition-opacity duration-200 ease-in-out" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5 12h14m0 0l-7-7m7 7l-7 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</h3>
+					
+					<p class="text-sm">Portfolio de Javier Gomariz hecho en Astro y Tailwind</p>
+					
+					<div class="mt-6 flex gap-4">
+						<div class="relative flex items-center">
+							<span class="group relative rounded-full px-1 py-1 text-xs font-medium">
+								<AstroBadge/>
+								<span class="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full mb-2 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover:opacity-100 group-hover:-translate-y-3">
+									Astro
+								</span>
+							</span>
+						</div>
+						<div class="relative flex items-center">
+							<span class="group relative rounded-full px-1 py-1 text-xs font-medium">
+								<TailwindBadge/>
+								<span class="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full mb-2 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover:opacity-100 group-hover:-translate-y-3">
+									Tailwind
+								</span>
+							</span>
+						</div>
+						<div class="relative flex items-center">
+							<span class="group relative rounded-full px-1 py-1 text-xs font-medium">
+								<HtmlBadge/>
+								<span class="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full mb-2 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover:opacity-100 group-hover:-translate-y-3">
+									HTML
+								</span>
+							</span>
+						</div>
+						<div class="relative flex items-center">
+							<span class="group relative rounded-full px-1 py-1 text-xs font-medium">
+								<CssBadge/>
+								<span class="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full mb-2 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover:opacity-100 group-hover:-translate-y-3">
+									CSS
+								</span>
+							</span>
+						</div>
+						<div class="relative flex items-center">
+							<span class="group relative rounded-full px-1 py-1 text-xs font-medium">
+								<JSBadge/>
+								<span class="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full mb-2 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover:opacity-100 group-hover:-translate-y-3">
+									JavaScript
+								</span>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</a>
+		</header>
 		
 	</section>
 	<hr class="border border-dotted border-gray-300 dark:border-gray-600 rounded-md"/>
-	<section id="me" class="flex flex-col sm:flex-row items-center gap-6">
-
-		
+	<section class="w-full" id="contact">
+		<header class="font-bold text-2xl text-indigo-400 dark:text-gray-100 mb-6 flex items-center gap-3">
+			<h2>Email</h2>
+			<div class="i-fa-pro:envelope text-3xl"></div>
+		</header>
+		<div class="flex gap-2">
+			<input type="text" disabled="" class="bg-black/5 dark:bg-white/5 w-full py-1.5 px-3 rounded-lg grid place-items-center text-slate-600 dark:text-slate-300" value="gomajavier2004@gmail.com">
+			<div class="flex gap-2">
+				<div class="relative group/tooltip">
+					<a href="mailto:gomajavier2004@gmail.com" target="_blank" rel="noreferrer" class="flex bg-indigo-100 hover:bg-opacity-80 dark:bg-indigo-500 hover:dark:bg-opacity-90 text-indigo-500 dark:text-indigo-100 py-2.5 px-4 rounded-lg">
+						<div class="text-lg">
+							<svg class="w-[20px] h-[20px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+								<path fill-rule="evenodd" d="M12 2a1 1 0 0 1 .932.638l7 18a1 1 0 0 1-1.326 1.281L13 19.517V13a1 1 0 1 0-2 0v6.517l-5.606 2.402a1 1 0 0 1-1.326-1.281l7-18A1 1 0 0 1 12 2Z" clip-rule="evenodd" transform="rotate(90 12 12)"/>
+							  </svg>
+							  
+							  
+						</div>
+					</a>
+					<span class="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full -translate-y-0 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover/tooltip:opacity-100 group-hover/tooltip:-translate-y-3">Mandame un email</span>
+				</div>
+				
+			</div>
+		</div>
 	</section>
+	
 	</main>
 </div>
 </Layout>
@@ -53,5 +234,12 @@ import Layout from '../layouts/Layout.astro';
 	.bodywrapper{
 		margin-top: 3%;
 	}
-
+	.BADGES{
+		margin-top: 3%;
+	}
+	
+	.omg:hover .arrow {
+    opacity: 1; /* Make the arrow fully visible on hover */
+    transform: scale(1); /* Return to normal size */
+}
 </style>
