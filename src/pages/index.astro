@@ -14,6 +14,7 @@ import FirebaseBadge from '../components/FirebaseBadge.astro';
 import BoostrapBadge from '../components/boostrapBadge.astro';
 import TailwindBadge from '../components/tailwindBadge.astro';
 import AstroBadge from '../components/AstroBadge.astro';
+import Expressbadge from '../components/Expressbadge.astro';
 ---
 
 <Layout title="Portfolio Javier Gomariz Prats 👍">
@@ -58,7 +59,7 @@ import AstroBadge from '../components/AstroBadge.astro';
 				<div class="flex flex-col gap-10">
 					<div class="flex flex-col gap-5">
 						<div class="flex flex-col gap-1 ">
-							<h2 class="text-lg font-semibold text-slate-700 dark:text-slate-200">Jr Front-End Developer<!-- --> • <!-- -->SendingBay (Marzo 2024-Actual)<!-- --></h2>
+							<h2 class="text-lg font-semibold text-slate-700 dark:text-slate-200">Jr Front-End Developer<!-- --> • <!-- -->SendingBay (Marzo 2024-Junio 2024)<!-- --></h2>
 						</div>
 						<ul class="list-disc flex flex-col gap-2 ml-5 text-slate-700 dark:text-gray-300 text-md">
 							<li>Creación de tiendas ecomerce con Shopify, Woocomerce y Prestashop.</li>
@@ -77,6 +78,7 @@ import AstroBadge from '../components/AstroBadge.astro';
 				<StarBadge/>
 			</div>
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+				<article class="projecto">
 				<div class="bg-gray-800 rounded-lg p-4 shadow-lg text-white border dark:border-gray-700 dark:hover:border-gray-300/30 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-105 duration-300">
 					<a href="https://github.com/javier-gomariz-prats/PokeCore" class="omg" target="_blank">
 					<h3 class="text-lg font-semibold flex items-center group">
@@ -141,6 +143,56 @@ import AstroBadge from '../components/AstroBadge.astro';
 					</div>
 				</a>
 				</div>
+			</article>
+				<article class="projecto gls">
+				<div class="bg-gray-800 rounded-lg p-4 shadow-lg text-white border dark:border-gray-700 dark:hover:border-gray-300/30 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-105 duration-300">
+					<a href="https://github.com/javier-gomariz-prats/GlsExtractorExtension" class="omg" target="_blank">
+					<h3 class="text-lg font-semibold flex items-center group">
+						GLS data extractor
+						<svg class="arrow opacity-0 scale-75 ml-2 transition-opacity duration-200 ease-in-out" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M5 12h14m0 0l-7-7m7 7l-7 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</h3>
+				
+					<p class="text-sm">Aplicación web para extraer automáticamente los UID de clientes de GLS  </p>
+					<div class="mt-6 flex gap-4">
+						<div class="relative flex items-center">
+							<span class="group relative rounded-full px-1 py-1 text-xs font-medium">
+								<HtmlBadge/>
+								<span class="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full mb-2 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover:opacity-100 group-hover:-translate-y-3">
+									HTML
+								</span>
+							</span>
+						</div>
+						<div class="relative flex items-center">
+							<span class="group relative rounded-full px-1 py-1 text-xs font-medium">
+								<CssBadge/>
+								<span class="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full mb-2 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover:opacity-100 group-hover:-translate-y-3">
+									CSS
+								</span>
+							</span>
+						</div>
+						<div class="relative flex items-center">
+							<span class="group relative rounded-full px-1 py-1 text-xs font-medium">
+								<JSBadge/>
+								<span class="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full mb-2 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover:opacity-100 group-hover:-translate-y-3">
+									JavaScript
+								</span>
+							</span>
+						</div>
+						<div class="relative flex items-center">
+							<span class="group relative rounded-full px-1 py-1 text-xs font-medium">
+								<Expressbadge/>
+								<span class="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full mb-2 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover:opacity-100 group-hover:-translate-y-3">
+									ExpressJS
+								</span>
+							</span>
+						</div>
+					</div>
+				</a>
+				</div>
+			</article>
+            <article>
 				<div class="bg-gray-800 rounded-lg p-4 shadow-lg text-white border dark:border-gray-700 dark:hover:border-gray-300/30 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-105 duration-300">
 					<a href="https://github.com/javier-gomariz-prats/Portfolio-JGP" class="omg" target="_blank">
 						<h3 class="text-lg font-semibold flex items-center group">
@@ -195,6 +247,7 @@ import AstroBadge from '../components/AstroBadge.astro';
 						</div>
 					</div>
 				</div>
+			</article>
 			</div>
 		</a>
 		</header>
