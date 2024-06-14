@@ -15,6 +15,9 @@ import BoostrapBadge from '../components/boostrapBadge.astro';
 import TailwindBadge from '../components/tailwindBadge.astro';
 import AstroBadge from '../components/AstroBadge.astro';
 import Expressbadge from '../components/Expressbadge.astro';
+import "@fontsource/poppins";
+import "@fontsource/oswald";
+import EstudiosBadge from '../components/EstudiosBadge.astro';
 ---
 
 <Layout title="Portfolio Javier Gomariz Prats 👍">
@@ -36,11 +39,16 @@ import Expressbadge from '../components/Expressbadge.astro';
 			</div>
 	<div class="flex flex-col items-center sm:items-start gap-3">
 		<div class="flex flex-col items-left gap-3">
-			<h1 class="text-3xl sm:text-4xl text-center sm:text-left font-bold text-slate-600 dark:text-green-600"><b> Javier Gomariz Prats</b></h1>
-			<p class=" text-slate-700 text-sm sm:text-lg dark:text-slate-300 max-w-xl rounded-2xl"><em>Apasionado por el software y el aprendizaje.</em></p>
+			<h1 class="nombre text-3xl sm:text-4xl text-center font-bold text-slate-600 dark:text-green-600">
+				<b>Javier Gomariz Prats</b>
+			</h1>
+			<p class="text-slate-700 text-sm sm:text-lg dark:text-slate-300 max-w-xl rounded-2xl text-center">
+				<em>Apasionado por el software y el aprendizaje.</em>
+			</p>
 			<p class="text-slate-700 text-sm sm:text-lg dark:text-slate-300 max-w-xl rounded-2xl">
-				Hola soy Javier 👋 Recién salido de mis estudios, me lanzo al mundo del desarrollo web con un enfoque en el Front-End. Aunque soy un apasionado de <JSBadge/> y  <TSBadge/> , estoy siempre listo para aprender cosas nuevas y seguir formándome.
-			  </p>	  
+				Hola soy Javier 👋 Recién salido de mis estudios, me lanzo al mundo del desarrollo web con un enfoque en el Front-End. Aunque soy un apasionado de <JSBadge/> y <TSBadge/>, estoy siempre listo para aprender cosas nuevas y seguir formándome.
+			</p>
+			
 		</div>
 		<div class="flex gap-3">
 			<div class="py-2 px-4 rounded-xl flex gap-2 items-center justify-center">
@@ -52,25 +60,59 @@ import Expressbadge from '../components/Expressbadge.astro';
 			</div>		
 	</section>
 	<hr class="border border-dotted border-gray-300 dark:border-gray-600 rounded-md"/>
-	<section id="experiencia" class="flex flex-col sm:flex-row items-center gap-6">
-			<header class="font-bold text-2xl text-indigo-400 dark:text-gray-100 mb-6 flex items-center gap-3">
-				<h2>Experiencia <ExperienceBadge/></h2>
-				</header>
-				<div class="flex flex-col gap-10">
-					<div class="flex flex-col gap-5">
-						<div class="flex flex-col gap-1 ">
-							<h2 class="text-lg font-semibold text-slate-700 dark:text-slate-200">Jr Front-End Developer<!-- --> • <!-- -->SendingBay (Marzo 2024-Junio 2024)<!-- --></h2>
-						</div>
-						<ul class="list-disc flex flex-col gap-2 ml-5 text-slate-700 dark:text-gray-300 text-md">
-							<li>Creación de tiendas ecomerce con Shopify, Woocomerce y Prestashop.</li>
-							<li>Desarrollo de plugins y extensiones con JavaScript <JSBadge/>
-								.</li>
-								<li>Desarrollo de front con HTML <HtmlBadge/>, CSS <CssBadge/>
-								   y JavaScript <JSBadge/>.</li>
-						</ul>
-					</div>
-				</div>		
+	<section id="estudios" class="flex flex-col items-center sm:items-start gap-6 w-full">
+		<header class="font-bold text-2xl text-indigo-400 dark:text-gray-100 mb-6 flex items-center gap-3">
+			<h2 class="flex items-center gap-2">Estudios <EstudiosBadge/></h2>
+		</header>
+		<div class="flex flex-col gap-10 w-full">
+			<div class="flex flex-col gap-5 w-full">
+				<div class="flex flex-col gap-1 w-full">
+					<h2 class="text-lg font-semibold text-slate-700 dark:text-slate-200">
+						• Bachillerato (Septiembre 2020-Junio 2022)
+					</h2>
+					<h3 class="flex flex-col gap-2 ml-5 text-slate-700 dark:text-gray-300 text-md">
+						- Colegio Sant Bertomeu de Godella, España.
+					</h3>
+				</div>
+				<div class="flex flex-col gap-1 w-full">
+					<h2 class="text-lg font-semibold text-slate-700 dark:text-slate-200">
+						• Grado Superior Desarrollo Aplicaciones Web (Septiembre 2022-Junio 2024)
+					</h2>
+					<h3 class="flex flex-col gap-2 ml-5 text-slate-700 dark:text-gray-300 text-md">
+						- Cieep Progresa, España.
+					</h3>
+				</div>
+			</div>
+		</div>
 	</section>
+	
+	<hr class="border border-dotted border-gray-300 dark:border-gray-600 rounded-md w-full my-8"/>
+	
+	<section id="experiencia" class="flex flex-col items-center sm:items-start gap-6 w-full">
+		<header class="font-bold text-2xl text-indigo-400 dark:text-gray-100 mb-6 flex items-center gap-3">
+			<h2 class="flex items-center gap-2">Experiencia <ExperienceBadge/></h2>
+		</header>
+		<div class="flex flex-col gap-10 w-full">
+			<div class="flex flex-col gap-5 w-full">
+				<div class="flex flex-col gap-1 w-full">
+					<h2 class="text-lg font-semibold text-slate-700 dark:text-slate-200">
+						Jr Front-End Developer • SendingBay (Marzo 2024-Junio 2024)
+					</h2>
+				</div>
+				<ul class="list-disc flex flex-col gap-2 ml-5 text-slate-700 dark:text-gray-300 text-md">
+					<li>Creación de tiendas ecomerce con Shopify, Woocomerce y Prestashop.</li>
+					<li>
+						Desarrollo de plugins y extensiones con JavaScript <JSBadge/>.
+					</li>
+					<li>
+						Desarrollo de front con HTML <HtmlBadge/>, CSS <CssBadge/> y JavaScript <JSBadge/>.
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	
+	
 	<section id="projects">
 		<header class="text-2xl font-bold text-indigo-500 dark:text-white mb-10">
 			<div class="mb-6 flex items-center gap-3">
@@ -285,8 +327,14 @@ import Expressbadge from '../components/Expressbadge.astro';
 </Layout>
 
 <style>
+	.nombre{
+		font-family: "oswald";
+
+	}
 	.bodywrapper{
 		margin-top: 3%;
+		font-family: "poppins";
+		font-size: large
 	}
 	.BADGES{
 		margin-top: 3%;
