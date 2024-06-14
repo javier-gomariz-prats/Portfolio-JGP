@@ -39,7 +39,7 @@ import EstudiosBadge from '../components/EstudiosBadge.astro';
 			</div>
 	<div class="flex flex-col items-center sm:items-start gap-3">
 		<div class="flex flex-col items-left gap-3">
-			<h1 class="nombre text-3xl sm:text-4xl text-center font-bold text-slate-600 dark:text-green-600">
+			<h1 class="nombre text-3xl sm:text-4xl text-center font-bold text-slate-600 dark:text-yellow-400">
 				<b>Javier Gomariz Prats</b>
 			</h1>
 			<p class="text-slate-700 text-sm sm:text-lg dark:text-slate-300 max-w-xl rounded-2xl text-center">
@@ -67,7 +67,7 @@ import EstudiosBadge from '../components/EstudiosBadge.astro';
 		<div class="flex flex-col gap-10 w-full">
 			<div class="flex flex-col gap-5 w-full">
 				<div class="flex flex-col gap-1 w-full">
-					<h2 class="text-lg font-semibold text-slate-700 dark:text-slate-200">
+					<h2 class="text-lg font-semibold text-slate-700 dark:text-yellow-400">
 						• Bachillerato (Septiembre 2020-Junio 2022)
 					</h2>
 					<h3 class="flex flex-col gap-2 ml-5 text-slate-700 dark:text-gray-300 text-md">
@@ -75,7 +75,7 @@ import EstudiosBadge from '../components/EstudiosBadge.astro';
 					</h3>
 				</div>
 				<div class="flex flex-col gap-1 w-full">
-					<h2 class="text-lg font-semibold text-slate-700 dark:text-slate-200">
+					<h2 class="text-lg font-semibold text-slate-700 dark:text-yellow-400">
 						• Grado Superior Desarrollo Aplicaciones Web (Septiembre 2022-Junio 2024)
 					</h2>
 					<h3 class="flex flex-col gap-2 ml-5 text-slate-700 dark:text-gray-300 text-md">
@@ -92,24 +92,19 @@ import EstudiosBadge from '../components/EstudiosBadge.astro';
 		<header class="font-bold text-2xl text-indigo-400 dark:text-gray-100 mb-6 flex items-center gap-3">
 			<h2 class="flex items-center gap-2">Experiencia <ExperienceBadge/></h2>
 		</header>
-		<div class="flex flex-col gap-10 w-full">
-			<div class="flex flex-col gap-5 w-full">
-				<div class="flex flex-col gap-1 w-full">
-					<h2 class="text-lg font-semibold text-slate-700 dark:text-slate-200">
-						Jr Front-End Developer • SendingBay (Marzo 2024-Junio 2024)
-					</h2>
-				</div>
-				<ul class="list-disc flex flex-col gap-2 ml-5 text-slate-700 dark:text-gray-300 text-md">
-					<li>Creación de tiendas ecomerce con Shopify, Woocomerce y Prestashop.</li>
-					<li>
-						Desarrollo de plugins y extensiones con JavaScript <JSBadge/>.
-					</li>
-					<li>
-						Desarrollo de front con HTML <HtmlBadge/>, CSS <CssBadge/> y JavaScript <JSBadge/>.
-					</li>
+		<ol class="relative border-s border-gray-200 dark:border-gray-700">
+			<li class="mb-10 ms-4">
+				<div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+				<time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-white">March 2024 - June 2024</time>
+				<h3 class="text-lg font-semibold text-gray-900 dark:text-yellow-400">Jr Front-End Developer at SendingBay</h3>
+				<ul class="list-disc pl-5 mt-2 text-base font-normal text-gray-500 dark:text-white">
+					<li>Creación de tiendas ecomerce con Shopify, Woocommerce y Prestashop.</li>
+					<li>Desarrollo de plugins y extensiones con JavaScript <JSBadge/></li>
+					<li>Desarrollo de front con HTML <HtmlBadge/>, CSS <CssBadge/> y JavaScript <JSBadge/></li>
 				</ul>
-			</div>
-		</div>
+			</li>
+		</ol>
+		
 	</section>
 	
 	
@@ -123,10 +118,10 @@ import EstudiosBadge from '../components/EstudiosBadge.astro';
 				<article class="projecto">
 				<div class="bg-gray-800 rounded-lg p-4 shadow-lg text-white border dark:border-gray-700 dark:hover:border-gray-300/30 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-105 duration-300">
 					<a href="https://github.com/javier-gomariz-prats/PokeCore" class="omg" target="_blank">
-					<h3 class="text-lg font-semibold flex items-center group">
+					<h3 class="text-lg font-semibold flex items-center group dark:text-yellow-400">
 						PokéCore
-						<svg class="arrow opacity-0 scale-75 ml-2 transition-opacity duration-200 ease-in-out" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M5 12h14m0 0l-7-7m7 7l-7 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<svg class="arrow opacity-0 scale-75 ml-2 transition-opacity duration-200 ease-in-out " width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M5 12h14m0 0l-7-7m7 7l-7 7" stroke="#facc15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 						</svg>
 					</h3>
 				
@@ -189,10 +184,10 @@ import EstudiosBadge from '../components/EstudiosBadge.astro';
 				<article class="projecto gls">
 				<div class="bg-gray-800 rounded-lg p-4 shadow-lg text-white border dark:border-gray-700 dark:hover:border-gray-300/30 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-105 duration-300">
 					<a href="https://github.com/javier-gomariz-prats/GlsExtractorExtension" class="omg" target="_blank">
-					<h3 class="text-lg font-semibold flex items-center group">
+					<h3 class="text-lg font-semibold flex items-center group dark:text-yellow-400">
 						GLS data extractor
 						<svg class="arrow opacity-0 scale-75 ml-2 transition-opacity duration-200 ease-in-out" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M5 12h14m0 0l-7-7m7 7l-7 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M5 12h14m0 0l-7-7m7 7l-7 7" stroke="#facc15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 						</svg>
 					</h3>
 				
@@ -237,10 +232,10 @@ import EstudiosBadge from '../components/EstudiosBadge.astro';
             <article>
 				<div class="bg-gray-800 rounded-lg p-4 shadow-lg text-white border dark:border-gray-700 dark:hover:border-gray-300/30 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-105 duration-300">
 					<a href="https://github.com/javier-gomariz-prats/Portfolio-JGP" class="omg" target="_blank">
-						<h3 class="text-lg font-semibold flex items-center group">
+						<h3 class="text-lg font-semibold flex items-center group dark:text-yellow-400 ">
 							Portfolio Javier Gomariz
 							<svg class="arrow opacity-0 scale-75 ml-2 transition-opacity duration-200 ease-in-out" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M5 12h14m0 0l-7-7m7 7l-7 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M5 12h14m0 0l-7-7m7 7l-7 7" stroke="#facc15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 							</svg>
 						</h3>
 					
@@ -308,7 +303,7 @@ import EstudiosBadge from '../components/EstudiosBadge.astro';
 			<input type="text" disabled="" class="bg-black/5 dark:bg-white/5 w-full py-1.5 px-3 rounded-lg grid place-items-center text-slate-600 dark:text-slate-300" value="gomajavier2004@gmail.com">
 			<div class="flex gap-2">
 				<div class="relative group/tooltip">
-					<a href="mailto:gomajavier2004@gmail.com" target="_blank" rel="noreferrer" class="flex bg-indigo-100 hover:bg-opacity-80 dark:bg-indigo-500 hover:dark:bg-opacity-90 text-indigo-500 dark:text-indigo-100 py-2.5 px-4 rounded-lg">
+					<a href="mailto:gomajavier2004@gmail.com" target="_blank" rel="noreferrer" class="flex bg-indigo-100 hover:bg-opacity-80 dark:bg-yellow-400 hover:dark:bg-opacity-90 text-indigo-500 dark:text-indigo-100 py-2.5 px-4 rounded-lg">
 						<div class="text-lg">
 							<svg class="w-[20px] h-[20px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
 								<path fill-rule="evenodd" d="M12 2a1 1 0 0 1 .932.638l7 18a1 1 0 0 1-1.326 1.281L13 19.517V13a1 1 0 1 0-2 0v6.517l-5.606 2.402a1 1 0 0 1-1.326-1.281l7-18A1 1 0 0 1 12 2Z" clip-rule="evenodd" transform="rotate(90 12 12)"/>
