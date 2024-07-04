@@ -285,10 +285,11 @@ import MailBadge from '../components/MailBadge.astro';
 							</span>
 						</div>
 					</div>
+					</a>
 				</div>
 			</article>
 			</div>
-		</a>
+
 		</header>
 		
 	</section>
@@ -302,7 +303,9 @@ import MailBadge from '../components/MailBadge.astro';
 			  
 		</header>
 		<div class="flex gap-2">
-			<input type="text" disabled="" class="bg-black/5 dark:bg-white/5 w-full py-1.5 px-3 rounded-lg grid place-items-center text-slate-600 dark:text-slate-300" value="gomajavier2004@gmail.com">
+			<label>
+				<input type="text" disabled="" class="bg-black/5 dark:bg-white/5 w-full py-1.5 px-3 rounded-lg grid place-items-center text-slate-600 dark:text-slate-300" value="gomajavier2004@gmail.com">
+			</label>
 			<div class="flex gap-2">
 				<div class="relative group/tooltip">
 					<a href="mailto:gomajavier2004@gmail.com" target="_blank" rel="noreferrer" class="flex bg-indigo-100 hover:bg-opacity-80 dark:bg-yellow-400 hover:dark:bg-opacity-90 text-indigo-500 dark:text-indigo-100 py-2.5 px-4 rounded-lg">
@@ -325,12 +328,12 @@ import MailBadge from '../components/MailBadge.astro';
 
 <style>
 	.nombre{
-		font-family: "oswald";
+		font-family: "oswald",serif;
 
 	}
 	.bodywrapper{
 		margin-top: 3%;
-		font-family: "poppins";
+		font-family: "poppins",serif;
 		font-size: large
 	}
 	.BADGES{
